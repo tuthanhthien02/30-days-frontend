@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --ff-primary: "Poppins", sans-serif;
+    --clr-primary: #4daf54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4daf54, #3d8888);
+    color: #fff;
+    font-family: var(--ff-primary);
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    padding: 40px 20px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #272d40;
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+    &__heart,
+    &__cart {
+        position: absolute;
+        font-size: 25px;
+    }
+
+    &__heart {
+        left: 20px;
+        top: 15px;
+    }
+
+    &__cart {
+        right: 20px;
+        top: 15px;
+    }
+
+    &__img {
+        width: 90%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title,
+    &__price {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__title {
+        color: var(--clr-primary);
+    }
+
+    &__size,
+    &__color {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            margin-right: 12px;
+        }
+    }
+
+    &__size span {
+        padding: 2px 10px;
+        background: #dadada;
+        color: black;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__color span {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__color-item {
+        background-color: white;
+
+        &--green {
+            background-color: #4daf54;
+        }
+
+        &--black {
+            background-color: black;
+        }
+
+        &--red {
+            background-color: #ff5252;
+        }
+    }
+}
